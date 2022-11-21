@@ -46,7 +46,7 @@ def hello_world():
     """
 # (4)
     """
-    The function returns the message we want to display in the user's browser. The default content type is HTML, so HTML
+    The functon returns the message we want to display in the user's browser. The default content type is HTML, so HTML
     in the string will be rendered by the browser. 
     """
 
@@ -67,6 +67,6 @@ with the --app option.
 # Ex.:
 """
     $ flask --app 1_minimal_application run
-    <<< Serving Flask app '1_minimal_application'
-    <<< Running on http;//127.0.0.1:5000 (Press CTRL+C to quit)
+    Serving Flask app '1_minimal_application'
+    Running on http;//127.0.0.1:5000 (Press CTRL+C to quit)
 """
