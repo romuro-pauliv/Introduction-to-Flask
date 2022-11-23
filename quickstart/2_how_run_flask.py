@@ -48,3 +48,37 @@ This tells your operating system to listen on all public IPs.
 # | Debug mode |
 # +------------+
 
+"""
+The flask run command can do more than just start the development server. By enabling debug mode, the server will auto -
+matically reload if code changes, and will show an interactive debugger in the browser if an error occurs during a re -
+quest.
+"""
+
+# WARNING 
+"""
+The debugger allows executing arbitrary Python code from the browser. It is protected by a pin, but still represents a
+major security risk. Do not run the development server or debugger in a production enviroment.
+"""
+
+# To enable debug mode, use the --debug option:
+"""
+$ flask --app 1_minimal_application --debug run    
+"""
+
+# +----------+
+# | See also |
+# +----------+
+
+"""
+For information about running in debug mode:
+Development Server: https://flask.palletsprojects.com/en/2.2.x/server/
+Command Line Internface: https://flask.palletsprojects.com/en/2.2.x/cli/
+
+For information about using the built-in debugger and other debuggers:
+Debugging Application Errors: https://flask.palletsprojects.com/en/2.2.x/debugging/
+
+For log errors and display nice error page:
+Logging: https://flask.palletsprojects.com/en/2.2.x/logging/
+Handling Application Errors: https://flask.palletsprojects.com/en/2.2.x/errorhandling/
+"""
+
