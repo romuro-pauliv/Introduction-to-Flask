@@ -19,13 +19,6 @@ standard Python file object, but it also has a save() method that allows you to 
 server. Here is a simple example showing how that works:
 """
 
-"""
-If you want to know how the file was named on the client before it was uploaded to your application, you can access the
-filename attribute. However please keep in mind that this value can be forged so never ever trust that value. if you
-want to use the filename of the client to store the file on the server, pass it through the secure_filename() function 
-that Werkzeug provides for you
-"""
-
 # +--------------------------------------------------------------------------------------------------------------------+
 from flask import Flask, render_template, request
 from werkzeug.utils import secure_filename
@@ -47,3 +40,9 @@ def uploader_file():
         f.save(secure_filename(f.filename))
         return 'file uploaded successfully'
 
+"""
+If you want to know how the file was named on the client before it was uploaded to your application, you can access the
+filename attribute. However please keep in mind that this value can be forged so never ever trust that value. if you
+want to use the filename of the client to store the file on the server, pass it through the secure_filename() function 
+that Werkzeug provides for you
+"""
