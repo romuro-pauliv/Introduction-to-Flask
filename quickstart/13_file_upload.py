@@ -27,17 +27,23 @@ that Werkzeug provides for you
 """
 
 # +--------------------------------------------------------------------------------------------------------------------+
-from flask import Flask, request, render_template
+from flask import Flask, render_template, request
 from werkzeug.utils import secure_filename
 # +--------------------------------------------------------------------------------------------------------------------+
+
 
 app = Flask(__name__)
 
 
-@app.route('/upload', methods=['GET, POST'])
+@app.route('/upload')
 def upload_file():
-    if request.method == 'POST':
-        file = request.files['the_file']
-        file.save(f'/var/www/uploads/{secure_filename(file.filename)}')
-        return "file sended!"
     return render_template('upload.html')
+
+
+@app.route('/uploader', methods=['GET', 'POST'])
+def uploader_file():
+    if request.method == 'POST':
+        f = request.files['file']
+        f.save(secure_filename(f.filename))
+        return 'file uploaded successfully'
+
