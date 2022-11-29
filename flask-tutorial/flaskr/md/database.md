@@ -103,3 +103,52 @@ def init_db_command():
 ----
 #### Register with the Application
 
+The `close_db` and `init_db_command` functions need to be registered with the application instance; otherwise, they won’t be used by the application. However, since you’re using a factory function, that instance isn’t available when writing the functions. Instead, write a function that takes an application and does the registration.
+
+> flaskr/db.py
+
+```Python
+def init_app(app):
+    app.teardown_appcontext(close_db)
+    app.cli.add_command(init_db_command)
+```
+
+**app.teardown_appcontext()** tells Flask to call that function when cleaning up after returning the response.
+
+**app.cli.add_command()** adds a new command that can be called with the flask command.
+
+Import and call this function from the factory. Place the new code at the end of the factory function before returning the app.
+
+> `flaskr/__init__.py`
+
+```Python
+def create_app():
+    app = ...
+    # existing code omitted
+
+    from . import db
+    db.init_app(app)
+
+    return app
+```
+
+----
+#### Initialize the Database File
+
+Now that `init-db` has been registered with the app, it can be called using the `flask` command, similar to the run command from the previous page.
+
+----
+#### Note
+If you’re still running the server from the previous page, you can either stop the server, or run this command in a new terminal. If you use a new terminal, remember to change to your project directory and activate the env as described in [Installation]().
+
+----
+
+Run the init-db command:
+
+`$ flask --app flaskr init-db`
+
+There will now be a `flaskr.sqlite` file in the `instance` folder in your project.
+
+Continue to [Blueprints and Views]()
+
+----

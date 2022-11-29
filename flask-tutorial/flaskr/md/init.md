@@ -75,7 +75,7 @@ You'll see output similar to this:
 * Debugger PIN: nnn-nnn-nnn
 ```
 
-Visit http://127.0.0.1/hello in a browser an you should see the "Hello, World!" message. Contragulations, you're now running your Flask web application!
+Visit http://127.0.0.1:5000/hello in a browser an you should see the "Hello, World!" message. Contragulations, you're now running your Flask web application!
 
 If another program is already using port 5000, you'll see `OSError: [Errno 98]` or `OSError: [WinError 10013]` when the server tries to start. See [Address already in use]() for how to handle that.
 

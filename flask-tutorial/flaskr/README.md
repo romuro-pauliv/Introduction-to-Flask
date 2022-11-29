@@ -14,5 +14,5 @@ We recommend that you read the codes and documents in this order:
 
 | Document | Info |
 |----------|------|
-| [flaskr/init.md]() | The application factory |
-| [flaskr/database.md]() | Define and Access the Database |
+| [flaskr/md/init.md]() | The application factory |
+| [flaskr/md/database.md]() | Define and Access the Database |
