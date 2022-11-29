@@ -64,6 +64,11 @@ def create_app(test_config: None = None) -> Flask:
     def hello() -> str:
         return 'Hello, World!'
     
+    # After read db.py |-----------------------------------------------------------------------------------------------|
+    from . import db
+    db.init_app(app)
+    # |----------------------------------------------------------------------------------------------------------------|
+    
     return app
 
 # (1) app = Flask(__name__, instance_relative_config=True) creates the Flask instace
