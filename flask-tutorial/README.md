@@ -20,14 +20,14 @@ Virtual environment are independent groups of Python libraries, one for each pro
 
 Python comes bundled with the venv module to create a virtual environments.
 
-##### Create an environment
+#### Create an environment
 In your project folder:
 | OS | command line |
 |----|--------------|
 | Linux/macOS | `python3 -m venv venv`|
 | Windows | `py -3 -m venv venv`|
 
-##### Activate the environment
+#### Activate the environment
 Before you work on your project, activate the corresponding environment:
 | OS | command line |
 |----|--------------|
@@ -37,7 +37,7 @@ Before you work on your project, activate the corresponding environment:
 Your shell prompt will change to show the name of the activated environment.
 
 ----
-##### Install Flask and dependencies
+#### Install Flask and dependencies
 Within the activated environment, use the following command to install Flask:
 
 `$ pip install flask`
@@ -48,11 +48,11 @@ I will also leave a file with all the project dependencies in case you prefer to
 
 The tutorial will assume you're working from the fask-tutorial directory from now on. The file names at the top of each code block are relative to the directory.
 
-A Flask application can be as simple as single file. See [minimal_application.py](link). However, as project gets bigger, it becomes overwhelming to keep all the code in one file. Python projects use packages to organize code into multiple modules that can be imported where needed, and the tutorial will do this as well.
-
 ----
 
-##### Layout
+A Flask application can be as simple as single file. See [minimal_application.py](link). However, as project gets bigger, it becomes overwhelming to keep all the code in one file. Python projects use packages to organize code into multiple modules that can be imported where needed, and the tutorial will do this as well.
+
+#### Layout
 
 The project directory will contain:
 - `flaskr/`, a Python package containing your application code and files.
@@ -97,7 +97,7 @@ By the end, your project layout will look like this:
 
 If you're using version control, the following files that are generated while running your project should be ignored. There may be files based on the editor you use. In general, ignore files that you didn't write. For example, with git:
 
-**.gitignore**
+> **.gitignore**
 ```
 venv/
 
@@ -115,3 +115,13 @@ build/
 *.egg-info/
 ```
 ----
+
+#### Reading Method
+
+We recommend that you read the codes and documents in this order:
+
+| Document | Info |
+|----------|------|
+| [flaskr/README.md]() | Application Setup |
+| [flaskr/init.md]() | The application factory |
+| [flaskr/database.md]() | Define and Access the Database |
