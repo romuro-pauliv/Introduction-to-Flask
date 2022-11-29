@@ -50,7 +50,7 @@ The tutorial will assume you're working from the fask-tutorial directory from no
 
 ----
 
-A Flask application can be as simple as single file. See [minimal_application.py](link). However, as project gets bigger, it becomes overwhelming to keep all the code in one file. Python projects use packages to organize code into multiple modules that can be imported where needed, and the tutorial will do this as well.
+A Flask application can be as simple as single file. See [minimal_application.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/quickstart/1_minimal_application.py). However, as project gets bigger, it becomes overwhelming to keep all the code in one file. Python projects use packages to organize code into multiple modules that can be imported where needed, and the tutorial will do this as well.
 
 #### Layout
 
@@ -122,6 +122,6 @@ We recommend that you read the codes and documents in this order:
 
 | Document | Info |
 |----------|------|
-| [flaskr/README.md]() | Application Setup |
-| [flaskr/md/init.md]() | The application factory |
-| [flaskr/md/database.md]() | Define and Access the Database |
+| [flaskr/README.md](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial) | Application Setup |
+| [flaskr/md/init.md](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/init.md) | The application factory |
+| [flaskr/md/database.md](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md) | Define and Access the Database |
