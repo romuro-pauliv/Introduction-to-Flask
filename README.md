@@ -10,7 +10,7 @@ Flask provides configuration and conventions, with sensible defaults, to get sta
 
 | Topic | Description |
 |-------|-------------|
-| [Installation]() | Step-by-step how to install Flask. |
+| [Installation](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/installation) | Step-by-step how to install Flask. |
 | [Quickstart](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/quickstart) | This page gives a good introduction to Flask. |
 | [Create a Blog](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial) | Creating a basic blog application called Flaskr. |
 
