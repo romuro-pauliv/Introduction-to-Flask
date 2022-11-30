@@ -6,7 +6,7 @@
 
 It's time to start coding! Create the `flaskr` directory and add the `__init__.py` file. The `__init__.py` server double duty: it will contain the application factory, and it tells Python that the `flaskr` directory should be treated as a package.
 
-> flask/`__init__`.py
+> [flask/__init\__.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/__init__.py)
 
 ```Python
 import os
@@ -83,6 +83,9 @@ Visit http://127.0.0.1:5000/hello in a browser an you should see the "Hello, Wor
 
 If another program is already using port 5000, you'll see `OSError: [Errno 98]` or `OSError: [WinError 10013]` when the server tries to start.
 
-Continue to [Define and Access the Database](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md)
+----
+
+- We recommend that you view the code [__init\__.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/__init__.py)
+- Continue to [Define and Access the Database](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md)
 
 ----

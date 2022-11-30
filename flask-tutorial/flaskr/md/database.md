@@ -22,7 +22,7 @@ The first thing to do when working with SQLite database (and most other Python d
 
 In a web application this connection is typically tied to the request. It is created at some point when handling a request, and closed before the response is sent.
 
-> flaskr/db.py
+> [flaskr/db.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/db.py)
 
 ```Python
 import sqlite3
@@ -63,7 +63,7 @@ def close_db(e=None):
 
 In SQLite, data is stored in _tables_ and _columns_. These need to be created before you can store and retrieve data. Flaskr will store users in the `user` table, and posts in the `post` table. Create a file with the SQL commands needed to create empty tables:
 
-> flaskr/schema.sql
+> [flaskr/schema.sql](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/schema.sql)
 
 ```SQL
 DROP TABLE IF EXISTS user;
@@ -87,7 +87,7 @@ CREATE TABLE post (
 
 Add the Python functions that will run these SQL commands to the db.py file:
 
-> flaskr/db.py
+> [flaskr/db.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/db.py)
 
 ```Python
 def init_db():
@@ -113,7 +113,7 @@ def init_db_command():
 
 The `close_db` and `init_db_command` functions need to be registered with the application instance; otherwise, they won’t be used by the application. However, since you’re using a factory function, that instance isn’t available when writing the functions. Instead, write a function that takes an application and does the registration.
 
-> flaskr/db.py
+> [flaskr/db.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/db.py)
 
 ```Python
 def init_app(app):
@@ -127,7 +127,7 @@ def init_app(app):
 
 Import and call this function from the factory. Place the new code at the end of the factory function before returning the app.
 
-> `flaskr/__init__.py`
+> [flaskr/__init\__.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/__init__.py)
 
 ```Python
 def create_app():
@@ -157,6 +157,7 @@ Run the init-db command:
 
 There will now be a `flaskr.sqlite` file in the `instance` folder in your project.
 
-Continue to [Blueprints and Views]()
+- We recommend that you view the codes: [db.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/db.py) and [schema.sql](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/schema.sql)
+- Continue to [Blueprints and Views]()
 
 ----
