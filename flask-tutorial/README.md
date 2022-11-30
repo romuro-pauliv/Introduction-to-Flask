@@ -1,12 +1,12 @@
 ### Tutorial
 
-This tutorial will walk you through creating a basic blog application called Flaskr. User wll be able to register, log in, create posts, and edit or delete their own posts. You will be able to package and install the application on other computers.
+This tutorial will walk you through creating a basic blog application called Flaskr. The user wll be able to register, log in, create posts, and edit or delete their own posts. You will be able to package and install the application on other computers.
 
 It's assumed that you're already familiar with Python. The official tutorial in the Python docs is a great way to learn or review first.
 
-While it's desined to give a good starting point, the tutorial doesn't cover all of Flask's features. Check out the quickstart for an overview of what Flask can do, then dive into the docs to find out more. The tutorial only user what's provided by Flask and Python. In another project, you might decide to use Extensions or other libraries to make some task simpler.
+While it's designed to give a good starting point, the tutorial doesn't cover all of Flask's features. Check out the [Quickstart](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/quickstart) for an overview of what Flask can do, then dive into the docs to find out more. The tutorial only used what's provided by Flask and Python. In another project, you might decide to use Extensions or other libraries to make some task simpler.
 
-Flask is flexibe. It doesn't require you to use any particular project or code layout. However, when first starting, it's helpful to use a more structure approach. This means that the tutorial will require a bit of boilerplate up front, but it's done to avoid many common pitfalls that new developer encounter, and it creates a project that's easy to expand on. Once you become more confortable with Flask, you can step out of this structure and take full advantage of Flask's flexibility.
+Flask is flexible. It doesn't require you to use any particular project or code layout. However, when first starting, it's helpful to use a more structured approach. This means that the tutorial will require a bit of boilerplate up front, but it's done to avoid many common pitfalls that new developer encounters, and it creates a project that's easy to expand on. Once you become more comfortable with Flask, you can step out of this structure and take full advantage of Flask's flexibility.
 
 ----
 
@@ -16,7 +16,7 @@ Use a virtual environment to manage the dependencies for your project, both in d
 
 What problem does a virtual environment solve? The more Python projects you have, the more likely it is that you need to work with different versions of Python libraries, or even projects itself. Newer versions of libraries of one project can break compatibility in another project.
 
-Virtual environment are independent groups of Python libraries, one for each project. Packages installed for one project will not affect other projects or the operating system's packages.
+The virtual environment is independent groups of Python libraries, one for each project. Packages installed for one project will not affect other projects or the operating system's packages.
 
 Python comes bundled with the venv module to create a virtual environments.
 
@@ -50,7 +50,7 @@ The tutorial will assume you're working from the fask-tutorial directory from no
 
 ----
 
-A Flask application can be as simple as single file. See [minimal_application.py](link). However, as project gets bigger, it becomes overwhelming to keep all the code in one file. Python projects use packages to organize code into multiple modules that can be imported where needed, and the tutorial will do this as well.
+A Flask application can be as simple a single file. See [minimal_application.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/quickstart/1_minimal_application.py). However, as the project gets bigger, it becomes overwhelming to keep all the code in one file. Python projects use packages to organize code into multiple modules that can be imported where needed, and the tutorial will do this as well.
 
 #### Layout
 
@@ -58,7 +58,7 @@ The project directory will contain:
 - `flaskr/`, a Python package containing your application code and files.
 - `tests/`, a directory containing test modules.
 - `venv/`, a Python virtual environment where Flask and other dependencies are installed.
-- Installation files teling Python how to install your project.
+- Installation files telling Python how to install your project.
 - Version control config, such as git. You should make a habit of using some type of version control for all your projects, no matter the size.
 - Any other project file you might add in the future.
 

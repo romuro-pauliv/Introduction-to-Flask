@@ -1,10 +1,10 @@
 ### Define and Access the Database
 
-The application will use a [SQLite]() database to store users and posts. Python comes with built-in support for SQLlite in the **sqlite3** module.
+The application will use a [SQLite](https://www.sqlite.org/index.html) database to store users and posts. Python comes with built-in support for SQLlite in the **sqlite3** module.
 
-SQLite is convenient because it doesn't require setting up a separate database server and is built-in to Python. However, if concurrent requests try to write to the database at the same time, theywill slow down as each write happens sequentially. Small applications won't notice this. Once you become big, you may want to switch to a different database.
+SQLite is convenient because it doesn't require setting up a separate database server and is built-in to Python. However, if concurrent requests try to write to the database at the same time, they will slow down as each write happens sequentially. Small applications won't notice this. Once you become big, you may want to switch to a different database.
 
-The tutorial doesn't go into detail about SQL. if you are not familiar with it, the SQLite docs describe the [language]().
+The tutorial doesn't go into detail about SQL. If you are not familiar with it, the [SQLite docs](https://docs.python.org/3/library/sqlite3.html).
 
 ----
 
