@@ -1,6 +1,6 @@
 ### Define and Access the Database
 
-The application will use a [SQLite](https://www.sqlite.org/index.html) database to store users and posts. Python comes with built-in support for SQLlite in the **sqlite3** module.
+His application will use a [SQLite](https://www.sqlite.org/index.html) database to store users and posts. Python comes with built-in support for SQLlite in the **sqlite3** module.
 
 SQLite is convenient because it doesn't require setting up a separate database server and is built-in to Python. However, if concurrent requests try to write to the database at the same time, they will slow down as each write happens sequentially. Small applications won't notice this. Once you become big, you may want to switch to a different database.
 
@@ -12,7 +12,7 @@ The tutorial doesn't go into detail about SQL. If you are not familiar with it, 
 
 The first thing to do when working with SQLite database (and most other Python database libraries) is to create a connection to it. Any queries and operations are performed using the connection, which is closed after the work is finished.
 
-In web application this connection is typically tied to the request. It is created at some point when handling a request, and closed before the reponse is sent.
+In a web application this connection is typically tied to the request. It is created at some point when handling a request, and closed before the response is sent.
 
 > flaskr/db.py
 
@@ -44,11 +44,11 @@ def close_db(e=None):
 
 **current_app** is another special object that points to the Flask application handling the request. Since you used an application factory, there is no application object when writing the rest of your code. `get_db` will be called when the application has been created and is handling a request, so **current_app** can be used.
 
-**sqlite3.connect()** establishes a connection to the file pointed at by the `DATABASE` configuration key. This file doesn’t have to exist yet, and won’t until you initialize the database later.
+**sqlite3.connect( )** establishes a connection to the file pointed at by the `DATABASE` configuration key. This file doesn’t have to exist yet, and won’t until you initialize the database later.
 
 **sqlite3.Row** tells the connection to return rows that behave like dicts. This allows accessing the columns by name.
 
-`close`_db checks if a connection was created by checking if `g.db` was set. If the connection exists, it is closed. Further down you will tell your application about the `close_db` function in the application factory so that it is called after each request.
+`close_db` checks if a connection was created by checking if `g.db` was set. If the connection exists, it is closed. Further down you will tell your application about the `close_db` function in the application factory so that it is called after each request.
 
 ----
 #### Create the Files
@@ -96,9 +96,9 @@ def init_db_command():
     click.echo('Initialized the database.')
 ```
 
-**open_resource()** opens a file relative to the `flaskr` package, which is useful since you won’t necessarily know where that location is when deploying the application later. `get_db` returns a database connection, which is used to execute the commands read from the file.
+**open_resource( )** opens a file relative to the `flaskr` package, which is useful since you won’t necessarily know where that location is when deploying the application later. `get_db` returns a database connection, which is used to execute the commands read from the file.
 
-**click.command()** defines a command line command called `init-db` that calls the `init_db` function and shows a success message to the user. You can read [Command Line Interface]() to learn more about writing commands.
+**click.command( )** defines a command line command called `init-db` that calls the `init_db` function and shows a success message to the user. You can read [Command Line Interface](https://flask.palletsprojects.com/en/2.2.x/cli/) to learn more about writing commands.
 
 ----
 #### Register with the Application
@@ -113,9 +113,9 @@ def init_app(app):
     app.cli.add_command(init_db_command)
 ```
 
-**app.teardown_appcontext()** tells Flask to call that function when cleaning up after returning the response.
+**app.teardown_appcontext( )** tells Flask to call that function when cleaning up after returning the response.
 
-**app.cli.add_command()** adds a new command that can be called with the flask command.
+**app.cli.add_command( )** adds a new command that can be called with the flask command.
 
 Import and call this function from the factory. Place the new code at the end of the factory function before returning the app.
 
@@ -139,7 +139,7 @@ Now that `init-db` has been registered with the app, it can be called using the 
 
 ----
 #### Note
-If you’re still running the server from the previous page, you can either stop the server, or run this command in a new terminal. If you use a new terminal, remember to change to your project directory and activate the env as described in [Installation]().
+If you’re still running the server from the previous page, you can either stop the server, or run this command in a new terminal. If you use a new terminal, remember to change to your project directory and activate the env as described in [create an environment](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/README.md#create-an-environment).
 
 ----
 
