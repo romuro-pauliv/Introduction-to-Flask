@@ -2,8 +2,8 @@
 - [Define and access the database](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md#define-and-access-the-database)
 - [Connect to the database](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md#connect-to-the-database)
     + [Create the files](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md#create-the-files)
-    + [Register with the Application](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md#register-with-the-application)
-    + [Initialize the Database File](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md#initialize-the-database-file)
+    + [Register with the application](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md#register-with-the-application)
+    + [Initialize the database file](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md#initialize-the-database-file)
 
 ----
 ### Define and Access the Database
