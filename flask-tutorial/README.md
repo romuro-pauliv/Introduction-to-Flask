@@ -50,11 +50,7 @@ The tutorial will assume you're working from the fask-tutorial directory from no
 
 ----
 
-<<<<<<< HEAD
 A Flask application can be as simple a single file. See [minimal_application.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/quickstart/1_minimal_application.py). However, as the project gets bigger, it becomes overwhelming to keep all the code in one file. Python projects use packages to organize code into multiple modules that can be imported where needed, and the tutorial will do this as well.
-=======
-A Flask application can be as simple as single file. See [minimal_application.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/quickstart/1_minimal_application.py). However, as project gets bigger, it becomes overwhelming to keep all the code in one file. Python projects use packages to organize code into multiple modules that can be imported where needed, and the tutorial will do this as well.
->>>>>>> 420ab2742ba0eaf3346cfb49c6333bef8d2a3bb5
 
 #### Layout
 
