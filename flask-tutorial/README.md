@@ -1,10 +1,10 @@
 #### Summary
 - [Tutorial](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#tutorial)
-- [Project Layout](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#project-layout)
-    + [Create an Environment](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#create-an-environment)
+- [Project layout](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#project-layout)
+    + [Create an environment](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#create-an-environment)
     + [Install Flask and dependencies](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#install-flask-and-dependencies)
-    + [Directory Layout](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#layout)
-- [Reading Method](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#reading-method)
+    + [Directory layout](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#layout)
+- [Reading method](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#reading-method)
 
 ----
 ### Tutorial

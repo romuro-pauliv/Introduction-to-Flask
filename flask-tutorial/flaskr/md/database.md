@@ -1,3 +1,11 @@
+#### Summary
+- [Define and access the database](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md#define-and-access-the-database)
+- [Connect to the database](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md#connect-to-the-database)
+    + [Create the files](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md#create-the-files)
+    + [Register with the Application](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md#register-with-the-application)
+    + [Initialize the Database File](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md#initialize-the-database-file)
+
+----
 ### Define and Access the Database
 
 His application will use a [SQLite](https://www.sqlite.org/index.html) database to store users and posts. Python comes with built-in support for SQLlite in the **sqlite3** module.

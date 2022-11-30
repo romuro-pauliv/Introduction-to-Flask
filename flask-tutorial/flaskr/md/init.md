@@ -1,3 +1,7 @@
+#### Summary
+- [The Application Factory](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/init.md#the-application-factory)
+- [Run the application](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/init.md#run-the-application)
+----
 ### The Application Factory
 
 It's time to start coding! Create the `flaskr` directory and add the `__init__.py` file. The `__init__.py` server double duty: it will contain the application factory, and it tells Python that the `flaskr` directory should be treated as a package.
