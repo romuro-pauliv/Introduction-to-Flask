@@ -1,3 +1,12 @@
+#### Summary
+- [Tutorial](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#tutorial)
+- [Project Layout](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#project-layout)
+    + [Create an Environment](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#create-an-environment)
+    + [Install Flask and dependencies](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#install-flask-and-dependencies)
+    + [Directory Layout](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#layout)
+- [Reading Method](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial#reading-method)
+
+----
 ### Tutorial
 
 This tutorial will walk you through creating a basic blog application called Flaskr. The user wll be able to register, log in, create posts, and edit or delete their own posts. You will be able to package and install the application on other computers.
