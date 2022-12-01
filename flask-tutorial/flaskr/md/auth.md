@@ -23,7 +23,7 @@ This creates a **Blueprint** named `auth`. Like the application object, the blue
 
 Import and register the blueprint from the factory using **app.register_blueprint()**. Place the new code at the end of the factory function before returning the app.
 
-> flaskr/__init\__.py
+> [flaskr/__init\__.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/auth.py)
 ```Python
 def create_app()
     app = ...
@@ -43,7 +43,7 @@ When the user visits the `/auth/register` URL, the `register` view will return H
 
 For now you will just write the view code. On the next session, you'll write templates to generate the HTML form.
 
-> flaskr/auth.py
+> [flaskr/auth.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/auth.py)
 
 ```Python
 @bp.route('/register', methods=('POST', 'GET'))
@@ -93,7 +93,7 @@ Here's what the `register` view function is doing:
 
 This view follows the same pattern as the `register` view above.
 
-> flaskr/auth.py
+> [flaskr/auth.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/auth.py)
 
 ```Python
 @bp.route('/login', methods=('GET', 'POST'))
@@ -130,7 +130,7 @@ There are a few differences from the `register` view:
 
 Now that the user's `id` is stored in the **session**, it will be available on subsequent requests. At the beginning of each request, if a user is logged in their information should be loaded and made available to other views.
 
-> flaskr/auth.py
+> [flaskr/auth.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/auth.py)
 
 ```Python
 @bp.before_app_request
@@ -151,7 +151,7 @@ def load_logged_in_user():
 ### Logout
 To log out, you need to remove the user id from the **session**. Then `load_logged_in_user` won't load a user on subsequent requests.
 
-> flaskr/auth.py
+> [flaskr/auth.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/auth.py)
 
 ```Python
 @bp.route('/logout')
@@ -164,7 +164,7 @@ def logout():
 ### Require Authentication in Other Views
 Creating, editing, and deleting blog posts will require a user to be logged in. A `decorator` can be used to check this for each view it's applied to.
 
-> flaskr/auth.py
+> [flaskr/auth.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/auth.py)
 
 ```Python
 def login_required(view):
@@ -188,4 +188,6 @@ For example, the _hello()_ view that was added to the app factory earlier in the
 
 When using a blueprint, the name of the blueprint is prepended to the name of the function. so the endpoint for the `login` function you wrote above is `auth.login` because you added it to the `auth` blueprint. 
 
+----
+We recommend that you view the code: [auth.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/auth.py)
 Continue to [Templates]()

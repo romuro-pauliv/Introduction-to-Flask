@@ -134,3 +134,4 @@ We recommend that you read the codes and documents in this order:
 | [flaskr/README.md](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial/flaskr) | Application Setup |
 | [flaskr/md/init.md](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/init.md) | The application factory |
 | [flaskr/md/database.md](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md) | Define and Access the Database |
+| [flaskr/md/auth.md](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/auth.md) | Blueprint and views |

@@ -158,6 +158,6 @@ Run the init-db command:
 There will now be a `flaskr.sqlite` file in the `instance` folder in your project.
 
 - We recommend that you view the codes: [db.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/db.py) and [schema.sql](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/schema.sql)
-- Continue to [Blueprints and Views]()
+- Continue to [Blueprints and Views](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/auth.md)
 
 ----
