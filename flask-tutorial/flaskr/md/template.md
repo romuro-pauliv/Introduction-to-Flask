@@ -13,7 +13,7 @@ Jinja looks and behaves mostly like Python. Special delimiters are used to disti
 
 Each page in the application will have the same basic layout around a different body. Instead of writing the entire HTML structure in each template, each template will _extend_ a base template and override specific sections.
 
-> flaskr/templates/base.html
+> [flaskr/templates/base.html](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/templates/base.html)
 
 ```Html
 <!DOCTYPE html>
@@ -59,7 +59,7 @@ The base template is directy in the `templates` directory. To keep the others or
 
 ### Register
 
-> flask/templates/auth/register.html
+> [flask/templates/auth/register.html](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/templates/auth/register.html)
 ```Html
 {% extends 'base.html' %}
 
@@ -91,7 +91,7 @@ The `input` tags are using the `required` attribute here. This tells the browser
 
 This is identical to the register template except for the title and submit button.
 
->flaskr/templates/auth/login.html
+> [flaskr/templates/auth/login.html](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/templates/auth/login.html)
 ```Html
 {% extends 'base.html' %}
 
@@ -121,5 +121,5 @@ Fill out a username and password and you'll be redirected to the login page. Try
 
 ----
 
-We recommend that you view code: [base.html](), [register.htm](), and [login.html]()
+We recommend that you view code: [base.html](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/templates/base.html), [register.htm](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/templates/auth/register.html), and [login.html](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/templates/auth/login.html)
 Continue to [Static Files]()

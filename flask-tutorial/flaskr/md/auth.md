@@ -190,4 +190,4 @@ When using a blueprint, the name of the blueprint is prepended to the name of th
 
 ----
 We recommend that you view the code: [auth.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/auth.py)
-Continue to [Templates]()
+Continue to [Templates](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/template.md)
