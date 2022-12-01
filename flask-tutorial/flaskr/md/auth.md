@@ -23,7 +23,7 @@ This creates a **Blueprint** named `auth`. Like the application object, the blue
 
 Import and register the blueprint from the factory using **app.register_blueprint()**. Place the new code at the end of the factory function before returning the app.
 
-> [flaskr/__init\__.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/auth.py)
+> [flaskr/__init\__.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/__init__.py)
 ```Python
 def create_app()
     app = ...
