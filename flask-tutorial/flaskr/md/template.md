@@ -122,4 +122,4 @@ Fill out a username and password and you'll be redirected to the login page. Try
 ----
 
 We recommend that you view code: [base.html](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/templates/base.html), [register.htm](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/templates/auth/register.html), and [login.html](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/templates/auth/login.html)
-Continue to [Static Files]()
+Continue to [Static Files](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/static.md)

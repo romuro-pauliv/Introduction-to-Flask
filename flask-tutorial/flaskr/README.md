@@ -18,3 +18,4 @@ We recommend that you read the codes and documents in this order:
 | [flaskr/md/database.md](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/database.md) | Define and Access the Database |
 | [flaskr/md/auth.md](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/auth.md) | Blueprint and views |
 | [flaskr/md/template.md](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/template.md) | Templates |
+| [flaskr/md/static.md](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/static.md) | Static files |

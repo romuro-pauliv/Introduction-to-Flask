@@ -12,7 +12,7 @@ Besides CSS, other types of static files might be files with JavaScript function
 
 this tutorial ins't focused on how to write CSS, so you can just copy the following into to `flaskr/static/style.css` file:
 
-> flaskr/static/style.css
+> [flaskr/static/style.css](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/static/style.css)
 
 ```css
 html { font-family: sans-serif; background: #eee; padding: 1rem; }
@@ -45,5 +45,5 @@ input[type=submit] { align-self: start; min-width: 10em; }
 
 Go to http://127.0.0.1:5000/auth/login and view the page. You can read more about CSS from [Mozilla's documentation](https://developer.mozilla.org/pt-BR/docs/Web/CSS). If you change a static file, refresh the browser page. If the change doesn't show up, try clearning your browser's cache.
 
-We recommended to view a code: [style.css]()
+We recommended to view a code: [style.css](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/static/style.css)
 Continue to [Blog Blueprint]()
