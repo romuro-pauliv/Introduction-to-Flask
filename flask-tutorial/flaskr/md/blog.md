@@ -12,5 +12,15 @@ Define the blueprint and register it in the application factory.
 
 > [flaskr/blog.py]()
 ```Python
+from flask import Blueprint, flash, g, redirect, render_template, request, url_for
+from werkzeug.exceptions import abort
+from flaskr.auth import login_required
+from flaskr.db import get_db
+```
 
+Import and register the blueprint from the factory using **app.register.blueprint()**. Place the new code at ht end of the end of the factory function before returning the app.
+
+> [flaskr/__init\__.py]()
+
+```Python
 ```
