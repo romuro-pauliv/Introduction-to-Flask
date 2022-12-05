@@ -10,7 +10,7 @@ As you implement each view, keep the development server running. As you save you
 
 Define the blueprint and register it in the application factory.
 
-> [flaskr/blog.py]()
+> [flaskr/blog.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/blog.py)
 ```Python
 from flask import Blueprint, flash, g, redirect, render_template, request, url_for
 from werkzeug.exceptions import abort
@@ -62,7 +62,7 @@ def index():
     return render_template('blog/index.html', posts=posts)
 ```
 
-> [flaskr/templates/blog/index.html]()
+> [flaskr/templates/blog/index.html](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/templates/blog/index.html)
 
 ```html
 {% block content %}
@@ -126,7 +126,7 @@ def create():
     return render_template('blog/create.html')
 ```
 
-> [flaskr/templates/blog/create.html]()
+> [flaskr/templates/blog/create.html](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/templates/blog/create.html)
 ```html
 {% extends 'base.html' %}
 
@@ -212,7 +212,7 @@ Unlike the views you've written so far, the `update` function takes an argument,
 
 The `create` and `update` view look very similar. The main difference is taht the `update` view uses a `post` object and `UPDATE` query instead of an `INSERT`. With some clever refactoring, you could use one view and template for both actions, but for the tutorial it's clearer to keep them separate.
 
-> [flaskr/templates/blog/update.html]()
+> [flaskr/templates/blog/update.html](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/templates/blog/update.html)
 ```html
 {% extends 'base.html' %}
 
