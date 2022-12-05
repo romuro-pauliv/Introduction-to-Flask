@@ -20,7 +20,7 @@ This is being introduced late in the tutorial, but in your future projects you s
 
 The `setup.py` file describes your project and the files that belong to it.
 
-> [setup.py]()
+> [setup.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/setup.py)
 ```Python
 from setuptools import find_packages, setup
 
@@ -35,7 +35,7 @@ setup(
 
 `packages` tells Python what package directories (and the Python files they contain) to include. `find_packages()` finds these directories automatically so you don't have to type them out. To include other files, such as the static and templates directories, `include_package_data` is set. Python needs another file named `MANIFEST.in` to tell what this other data is.
 
-> [MANIFEST.in]()
+> [MANIFEST.in](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/MANIFEST.in)
 ```in
 include flaskr/schema.sql
 graft flaskr/static

@@ -263,4 +263,4 @@ def delete(id):
 
 Congratulations, you've now finished writing your application. Take some time to try out everthing in the browser. However, there's still more to do before the project is complete.
 
-Continue to [Make the Project Installable]()
+Continue to [Make the Project Installable](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/make_installable.md)
