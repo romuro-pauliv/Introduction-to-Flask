@@ -1,6 +1,6 @@
 ### Templates
 
-You've written the authentication views for your application, but if you're running the server and try to go to any of the URLs, you'll see a `TemplateNotFound` error. That's because the views are calling **render_template()**, but you haven't written the templates yet. The template files will be stored in the `templates`directory inside the `flaskr` package. 
+You've written the authentication views for your application, but if you're running the server and try to go to any of the URLs, you'll see a `TemplateNotFound` error. That's because the views are calling **render_template()**, but you haven't written the templates yet. The template files will be stored in the `templates` directory inside the `flaskr` package. 
 
 Templates are files that contain static data as well as placeholder for dynamic data. A template is rendered with specific data to produce a final document. Flask uses the [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) template library to render templates.
 
@@ -49,11 +49,11 @@ After the page title, and before the content, the template loops over each messa
 
 There are three blocks defined here that will be overridden in the other templates:
 
-1. `{% block title %}` will change the title displayed in the browser's tab and window title.
-2. `{% block header %}` is similar to `title` but will change the title displayed on the page.
+1. `{% block title %}` will change the title displayed in the browser's tab and window title;
+2. `{% block header %}` is similar to `title` but will change the title displayed on the page;
 3. `{% block content %}` is where the content of each page goes, such as the login form or a blog post.
 
-The base template is directy in the `templates` directory. To keep the others organized, the templates for a blueprint will be placed in a directory with the same name as the blueprint.
+The base template is directly in the `templates` directory. To keep the others organized, the templates for a blueprint will be placed in a directory with the same name as the blueprint.
 
 ----
 
