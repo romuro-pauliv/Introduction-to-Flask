@@ -21,3 +21,4 @@ We recommend that you read the codes and documents in this order:
 | [flaskr/md/static.md](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/static.md) | Static files |
 | [flaskr/md/blog.md](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/blog.md) | Blog |
 | [flaskr/md/make_installable.md](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/flaskr/md/make_installable.md) | Make the Project Installable |
+| [tests/README.md](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial/tests) | Test Coverage |

@@ -24,7 +24,7 @@ The test code is located in the `test` directory. This directory is _next_ to th
 
 Each test will create a new temporary database file and populate some data that will be used in the tests. Write a SQL file to insert that data.
 
-> tests/data.sql
+> [tests/data.sql](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/tests/data.sql)
 
 ```sql
 INSERT INTO user (username, password)
@@ -39,7 +39,7 @@ VALUES
 
 The `app` fixture will call the factory and pass `test_config` to configure the application and database for testing instead of using your local development configuration.
 
-> tests/conftest.py
+> [tests/conftest.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/tests/conftest.py)
 
 ```Python
 import os
@@ -100,7 +100,7 @@ There's not much to test about the factory itself. Most of the code will be exec
 
 The only behavior that can change is passing test config. If config is not passed, there should be some default configuration, otherwise the configuration should be overridden.
 
-> tests/test_factory.py
+> [tests/test_factory.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/tests/test_factory.py)
 
 ```Python
 from flaskr import create_app
@@ -124,7 +124,7 @@ You added the `hello` route as an example when writing the factory at the beginn
 
 Within an application context, `get_db` should return the same connection each time it's called. After the context, the connection should be closed.
 
-> tests/test_db.py
+> [tests/test_db.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/tests/test_db.py)
 
 ```Python
 import sqlite3
@@ -146,7 +146,7 @@ def test_get_close_db(app):
 
 The `init-db` command should call the `init_db` function and output a message.
 
-> tests/test_db.py
+> [tests/test_db.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/tests/test_db.py)
 
 ```Python
 def test_init_db_command(runner, monkeypatch):
@@ -170,7 +170,7 @@ This test uses Pytest's `monkeypatch` fixture to replace the `init_db` function 
 
 For most of the views, a user needs to be logged in. The easiest way to do this in test is to make a `POST` request to the `login` view with the cliet. Rather than writing that out every time, you can write a class with methods to do that, and use a fixture to pass it the client for each test.
 
-> tests/conftest.py
+> [tests/conftest.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/tests/conftest.py)
 
 ```Python
 class AuthActions(object):
@@ -196,7 +196,7 @@ With the `auth` fixture, you can call `auth.login()` in a test to log in as the 
 
 The register view should render successfully on `GET`. On `POST` with valid form data, it should redirect to the login URL and the user's data should be in the database. Invalid data should display error messages.
 
-> tests/test_auth.py
+> [tests/test_auth.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/tests/test_auth.py)
 
 ```Python
 import pytest
@@ -242,7 +242,7 @@ To test that the page renders successfully, a simple request is made and checked
 
 The tests for the login view are very similar to those for `register`. Rather than testing the data in the database, **session** should have `user_id` set after logging in.
 
-> tests/test_auth.py
+> [tests/test_auth.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/tests/test_auth.py)
 
 ```Python
 def test_login(client, auth):
@@ -269,7 +269,7 @@ Using `client` in a `with` block allows accessing context variables such as **se
 
 Testing `logout` is the opposite of `login`. **session** should not contain `user_id` after logging out.
 
-> tests/test_auth.py
+> [tests/test_auth.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/tests/test_auth.py)
 ```Python
 def test_logout(client, auth):
     auth.login()
@@ -289,7 +289,7 @@ The `index` view should display information about the post that was added with t
 
 You can also test some more authentication behavior while testing the `index` view. When not logged in, each page shows links to log in or register. When logged in, there's a link to log out.
 
-> tests/test_blog.py
+> [tests/test_blog.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/tests/test_blog.py)
 
 ```Python
 import pytest
@@ -312,7 +312,7 @@ def test_index(client, auth):
 
 A user must be logged in to access the `create`, `update`, and `delete` views. the logged in user must be the author of the post to access `update` and `delete`, otherwise a `403 Forbidden` status is returned. If a `post` with the given `id` doesn't exist, `update` and `delete` should return `404 Not Found`.
 
-> tests/test_blog.py
+> [tests/test_blog.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/tests/test_blog.py)
 
 ```Python
 @pytest.mark.parametrize('path', (
@@ -351,7 +351,7 @@ def test_exists_required(client, auth, path):
 
 The `create` and `update` view should render and return `200 OK` status for a `GET` request. When valid data is sent in a `POST` request, `create` should insert the new post data into the database, and `update` should modify the existing data. Both pages should an error message on invalid data.
 
-> tests/test_blog.py
+> [tests/test_blog.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/tests/test_blog.py)
 ```Python
 def test_create(client, auth, app):
     auth.login()
@@ -386,7 +386,7 @@ def test_create_update_validate(client, auth, path):
 ```
 The `delete` view should redirect to the index URL and the post should no longer exist in the database.
 
-> tests/test_blog.py
+> [tests/test_blog.py](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/tests/test_blog.py)
 
 ```Python
 def test_delete(client, auth, app):
@@ -406,7 +406,7 @@ def test_delete(client, auth, app):
 
 Some extra configuration, which is not required but makes running test with coverage less verbose, can be added to the project's `setup.cfg` file.
 
-> setup.cfg
+> [setup.cfg](https://github.com/romuro-pauliv/Introduction-to-Flask/blob/main/flask-tutorial/setup.cfg)
 ```
 [tool:pytest]
 testpaths = tests

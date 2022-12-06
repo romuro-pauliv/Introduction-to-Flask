@@ -77,6 +77,6 @@ wheel          0.30.0
 
 Nothing changes from how you've been running your project so far. `--app` is still set to `flaskr` and `flask run` still the application, but you can call it from anywhere, not just the `flask-tutorial` directory.
 
-Continue to [Test Coverage]()
+Continue to [Test Coverage](https://github.com/romuro-pauliv/Introduction-to-Flask/tree/main/flask-tutorial/tests)
 
 ----
